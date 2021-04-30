@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel=stylesheet href="style.css">
+</head>
+<body>
+    <form action="#" class="login-form">
+        <h1>Sign Up</h1>
+        <div class ="textb">
+            <input type="text" id = "Username" required>
+            <div class="placeholder">Username</div>
+        </div>
+
+        <div class ="textb">
+            <input type="password" id = "Password" required>
+            <div class="placeholder">Password</div>
+            <div class="show-password fas fa-eye-slash"></div>      <!-- Per poter vedere la password -->
+        </div>
+
+        <div class="checkbox">      <!-- Questo e' il remember me -->
+            <input type="checkbox">
+            <div class="fas fa-check"></div>
+            Remember me
+        </div>
+
+        <button onclick="location.href='../index.html'" class="btnx fas fa-times"></button>
+        <button onclick="javascript:validate()" class="btn fas fa-arrow-right" disabled></button>
+
+    </form>
+
+    <script language = "javascript">
+        //Ora faccio si che il bottone di login diventi enabled quando sia username che password sono compilati
+        var fields = document.querySelectorAll(".textb input");
+        var btn = document.querySelector(".btn");
+        function check(){
+            if (fields[0].value != "" && fields[1].value != ""){
+                btn.disabled = false;
+            }
+            else{
+                btn.disabled = true;
+            }
+        }
+
+        fields[0].addEventListener("keyup", check);
+        fields[1].addEventListener("keyup", check);
+
+        document.querySelector(".show-password").addEventListener("click",
+        function(){
+            if(this.classList[2] == "fa-eye-slash"){
+                this.classList.remove("fa-eye-slash");
+                this.classList.add("fa-eye");
+                fields[1].type = "text";
+            }
+            else{
+                this.classList.remove("fa-eye");
+                this.classList.add("fa-eye-slash");
+                fields[1].type = "password";
+            }
+        });
+
+        
+        function validate(){
+            if(   document.getElementById("Username").value == "boh"
+               && document.getElementById("Password").value == "boh" )
+            {
+                location.href="../Schermata di scelta dello sfidante/index.html";
+            }
+            else{
+                alert( "validation failed" );
+            }
+}
+</script>
+        
+    </script>
+</body>
