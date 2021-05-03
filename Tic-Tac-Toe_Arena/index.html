@@ -6,15 +6,15 @@
     <link rel=stylesheet href="style.css">
 </head>
 <body>
-    <form action="#" class="login-form">
+    <form method = "put" id = "myform" action="https://server3t.herokuapp.com/utenti/login" class="login-form">
         <h1>Sign In</h1>
         <div class ="textb">
-            <input type="text" required>
+            <input type="text" id = "username" required>
             <div class="placeholder">Username</div>
         </div>
 
         <div class ="textb">
-            <input type="password">
+            <input type="password" id = "password">
             <div class="placeholder">Password</div>
             <div class="show-password fas fa-eye-slash"></div>      <!-- Per poter vedere la password -->
         </div>
@@ -25,7 +25,7 @@
             Remember me
         </div>
 
-        <button class="btn fas fa-arrow-right" disabled></button>
+        <button onclick="location.href='ChallengeOpponent/index.html'" class="btn fas fa-arrow-right" type = "submit" form = "myform" value = "Submit"></button>
         <a href="Schermata di Registrazione/index.html"> Create an Account</a>
     </form>
 

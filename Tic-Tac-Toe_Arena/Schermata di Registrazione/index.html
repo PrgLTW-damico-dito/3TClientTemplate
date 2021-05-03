@@ -6,31 +6,30 @@
     <link rel=stylesheet href="style.css">
 </head>
 <body>
-    <form action="#" class="login-form">
+    <form method = "POST" action="https://server3t.herokuapp.com/utenti" class="login-form">
         <h1>Sign Up</h1>
         <div class ="textb">
-            <input type="text" id = "Username" required>
+            <input type="text" id = "username" required>
             <div class="placeholder">Username</div>
         </div>
 
         <div class ="textb">
-            <input type="password" id = "Password" required>
+            <input type="password" id = "password" required>
             <div class="placeholder">Password</div>
             <div class="show-password fas fa-eye-slash"></div>      <!-- Per poter vedere la password -->
         </div>
 
         <div class="checkbox">      <!-- Questo e' il remember me -->
-            <input type="checkbox">
             <div class="fas fa-check"></div>
             Remember me
         </div>
 
         <button onclick="location.href='../index.html'" class="btnx fas fa-times"></button>
-        <button onclick="javascript:validate()" class="btn fas fa-arrow-right" disabled></button>
+        <button onclick="location.href='../ChallengeOpponent/index.html'" class="btn fas fa-arrow-right" disabled></button>
 
     </form>
 
-    <script language = "javascript">
+    <script>
         //Ora faccio si che il bottone di login diventi enabled quando sia username che password sono compilati
         var fields = document.querySelectorAll(".textb input");
         var btn = document.querySelector(".btn");
@@ -60,18 +59,5 @@
             }
         });
 
-        
-        function validate(){
-            if(   document.getElementById("Username").value == "boh"
-               && document.getElementById("Password").value == "boh" )
-            {
-                location.href="../Schermata di scelta dello sfidante/index.html";
-            }
-            else{
-                alert( "validation failed" );
-            }
-}
-</script>
-        
     </script>
 </body>
