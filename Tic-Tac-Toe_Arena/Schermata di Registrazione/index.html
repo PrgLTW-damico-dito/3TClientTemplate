@@ -6,26 +6,27 @@
     <link rel=stylesheet href="style.css">
 </head>
 <body>
-    <form method = "POST" action="https://server3t.herokuapp.com/utenti" class="login-form">
+    <form method = "post" action="https://server3t.herokuapp.com/utenti" class="login-form">
         <h1>Sign Up</h1>
         <div class ="textb">
-            <input type="text" id = "username" required>
+            <input type="text" id = "username" name = "username" required>
             <div class="placeholder">Username</div>
         </div>
 
         <div class ="textb">
-            <input type="password" id = "password" required>
+            <input type="password" id = "password" name = "password" required>
             <div class="placeholder">Password</div>
             <div class="show-password fas fa-eye-slash"></div>      <!-- Per poter vedere la password -->
         </div>
 
         <div class="checkbox">      <!-- Questo e' il remember me -->
+            <input type="checkbox">
             <div class="fas fa-check"></div>
             Remember me
         </div>
 
         <button onclick="location.href='../index.html'" class="btnx fas fa-times"></button>
-        <button onclick="location.href='../ChallengeOpponent/index.html'" class="btn fas fa-arrow-right" disabled></button>
+        <button value = "Submit" type = "submit" onclick="location.href='../ChallengeOpponent/index.html'" class="btn fas fa-arrow-right" disabled></button>
 
     </form>
 
