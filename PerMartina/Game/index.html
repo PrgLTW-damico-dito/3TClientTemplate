@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>   <!-- Questo serve per far adattare la dimensione ai vari dispositivi-->
+        <title>Tic Tac Toe Arena</title>
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <nav>
+            <p>TicTacToe-Arena</p>
+
+            <ul>
+                <li><a href="index.html">Arena</a></li>
+                <li><a href="../Profile/index.html">Profile</a></li>
+                <li><a href="../ContactUs/index.html">Contact us</a></li>
+
+                <li><a id= "login" href="../index.html">Login</a></li>
+                <li><a id= "logout" href="../index.html">Logout</a></li>
+
+
+            </ul>
+        </nav>
+
+        <div id="game-view">   <!-- Questo div indica l'intero "quadrato" del gioco-->
+            <div id="game-view-info">   <!-- Questo e' il div della striscia superiore, dove verra' scritto di chi e' il turno o chi ha vinto-->
+                AOAOAO
+            </div>
+            <div id="game-view-squares">    <!-- Questo e' invece il contenitore dei vari Square-->
+                <div 
+                    v-for="(square, i) in squares" 
+                    class = "game-view-square">   
+
+                
+
+                    <!--
+                        !!!!!!!!!!
+
+
+                            Ho lasciato solo questi due, servono per far vedere i singoli "quadrati del tris".
+                            Ho tolto invece una riga di codice che mostrava la mossa fatta (in breve mostrava X o O sul browser se veniva cliccato un quadrato)
+                            ed una che faceva invece si che quando un giocatore vince le X o le O vincenti vengano rese Highlighted, ossia rese di colore verde.
+
+
+                        !!!!!!!!!!
+
+
+                    -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <button id="LetsPlay"> Let's Play </button>
+
+
+
+        <!--
+        !!!!!!!!!!
+
+
+            Tutto cio' che si trova da qui in giu' e' script e puo' esser tolto. Non lo levo perche' puo' esser comodo in quanto permette di vedere la griglia del tris
+            ed ogni comando e' commentato.
+
+
+        !!!!!!!!!!
+
+
+    -->
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue" charset="utf-8"></script>    <!-- Questo serve per poter usare vue.js-->
+        <script src="js/Square.js" charset="utf-8"></script>    <!-- Permette di avere nel file index tutto cio' che e' definito in Square.js-->
+        <script src="js/Game.js" charset="utf-8"></script>      <!-- Permette di avere nel file index tutto cio' che e' definito in Game.js-->
+        <script type="text/javascript">     // Questo serve per fare prove e debugging
+            let activeGame = new Game();
+
+            let gameVue = new Vue({
+                el: '#game-view',    //Questa linea di codice servirebbe per settare l'intero div #game-view in html
+                data: activeGame,    //Questo serve per far si che ogni modifica fatta su activeGame venga rappresentata anche in html (se il Game viene settanto come non piu' inProgress, la mia pagina Html dovra' mostrarlo immediatamente dopo)
+                computed: {
+                    infoMessage: function(){
+                        if (this.inProgress){
+                            return 'It is '+ this.currentTurn + '\'s turn!';
+                        }
+
+                        if (this.winner){
+                            return this.winner+' wins!';
+                        }
+
+                        if (!this.winner && !this.inProgress){
+                            return 'It was a draw!';
+                        }
+                    }
+                }
+            });
+        </script>    
+    </body>
+</html>

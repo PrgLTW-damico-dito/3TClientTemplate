@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel=stylesheet href="style.css">
+</head>
+<body>
+    <form method = "put" id = "myform" action="https://server3t.herokuapp.com/utenti/login" class="login-form">
+        <h1>Sign In</h1>
+        <div class ="textb">
+            <input type="text" id = "username" required>
+            <div class="placeholder">Username</div>
+        </div>
+
+        <div class ="textb">
+            <input type="password" id = "password" required>
+            <div class="placeholder">Password</div>
+            <div class="show-password fas fa-eye-slash"></div>      <!-- Per poter vedere la password -->
+        </div>
+
+        <div class="checkbox">      <!-- Questo e' il remember me -->
+            <input type="checkbox">
+            <div class="fas fa-check"></div>
+            Remember me
+        </div>
+
+        <button onclick="location.href='Game/index.html'" class="btn fas fa-arrow-right" type = "submit" form = "myform" value = "Submit"></button>
+        <a href="Registration/index.html"> Create an Account</a>
+    </form>
+
+    <!--
+        !!!!!!!!!!
+
+
+            Va fatto si che il bottone di login diventi enabled quando sia username che password sono compilati.
+            Inoltre va fatto si che quando si clicca il bottone "visualizza password", venga sostituito il simbolo fa-eye-slash con con fa-eye (da occhio con barra
+            davanti ad occhio senza barra)
+
+
+        !!!!!!!!!!
+
+
+    -->
+</body>
