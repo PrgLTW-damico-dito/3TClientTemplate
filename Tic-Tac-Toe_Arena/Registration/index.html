@@ -6,15 +6,15 @@
     <link rel=stylesheet href="style.css">
 </head>
 <body>
-    <form method = "put" id = "myform" action="https://server3t.herokuapp.com/utenti/login" class="login-form">
-        <h1>Sign In</h1>
+    <form method = "post" action="https://server3t.herokuapp.com/utenti" class="login-form">
+        <h1>Sign Up</h1>
         <div class ="textb">
-            <input type="text" id = "username" required>
+            <input type="text" id = "username" name = "username" required>
             <div class="placeholder">Username</div>
         </div>
 
         <div class ="textb">
-            <input type="password" id = "password">
+            <input type="password" id = "password" name = "password" required>
             <div class="placeholder">Password</div>
             <div class="show-password fas fa-eye-slash"></div>      <!-- Per poter vedere la password -->
         </div>
@@ -25,8 +25,9 @@
             Remember me
         </div>
 
-        <button onclick="location.href='Game/index.html'" class="btn fas fa-arrow-right" type = "submit" form = "myform" value = "Submit"></button>
-        <a href="Registration/index.html"> Create an Account</a>
+        <button onclick="location.href='../index.html'" class="btnx fas fa-times"></button>
+        <button value = "Submit" type = "submit" onclick="location.href='../Game/index.html'" class="btn fas fa-arrow-right" disabled></button>
+
     </form>
 
     <script>
@@ -58,5 +59,6 @@
                 fields[1].type = "password";
             }
         });
+
     </script>
 </body>
