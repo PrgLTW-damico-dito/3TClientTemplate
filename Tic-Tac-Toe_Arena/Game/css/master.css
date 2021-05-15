@@ -46,6 +46,69 @@ nav ul li a{
     text-decoration: none;
 }
 
+#game-space{
+    position: absolute;
+    right: 400px;
+    left: 400px;
+    top: 100px;
+    width: 1050px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #eee;
+    opacity: 0.6;
+}
+
+#playerOnePic{
+    position: absolute;
+    left: 450px;
+    top: 160px;
+    width: 100px;
+}
+
+#playerTwoPic{
+    position: absolute;
+    right: 450px;
+    top: 160px;
+    width: 100px;
+}
+
+#Ximage {
+    position: absolute;
+    left: 460px;
+    top: 270px;
+    width: 40px;
+    background-color: transparent;
+}
+
+#Oimage {
+    position: absolute;
+    right: 460px;
+    top: 270px;
+    width: 40px;
+    background-color: transparent;
+}
+
+#playerOneUsername{
+    position: absolute;
+    left: 465px;
+    top: 130px;
+    width: 100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#playerTwoUsername{
+    position: absolute;
+    right: 435px;
+    top: 130px;
+    width: 100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 
 #game-view{
     /* Questo e' il "quadrato" in cui e' contenuto l'intero gioco*/
