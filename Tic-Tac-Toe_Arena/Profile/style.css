@@ -150,3 +150,105 @@ nav ul li a{
   .btn:hover{
     opacity: .85;
   }
+
+  @media only screen and (max-width: 550px){
+    nav p{
+        display: none;  
+    }
+
+    nav ul{
+        float:left;
+        margin:  0 15px;
+    }
+
+    nav ul li a{
+        display: block;
+        font-family: arial;
+        color: #222;
+        font-size: 18px;
+        padding: 20px 10px;
+        text-decoration: none;
+    }
+    
+    .profile{
+      position: relative;
+      top: 80px;
+      align-items: center;
+      width: calc(100% - 20px);
+      max-width: 500px;
+      height: 550px;
+      background-color: #fff;
+      padding: 50px 40px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 7px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .Us-Pw input{
+      width: 260px;
+      height: 70px;
+      border: none;
+      background-color: #ededed;
+      border-radius: 4px;
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 14px 60px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    nav p{
+        display: none;  
+    }
+
+    nav ul{
+        float:left;
+        margin:  0 15px;
+    }
+
+    nav ul li a{
+        display: block;
+        font-family: arial;
+        color: #222;
+        font-size: 18px;
+        padding: 20px 10px;
+        text-decoration: none;
+    }
+    
+    .profile{
+      position: relative;
+      top: 80px;
+      align-items: center;
+      width: calc(100% - 20px);
+      max-width: 500px;
+      height: 565px;
+      background-color: #fff;
+      padding: 60px 40px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 7px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .Us-Pw input{
+      width: 260px;
+      height: 70px;
+      border: none;
+      background-color: #ededed;
+      border-radius: 4px;
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 14px 60px 0 10px;
+    }
+}
