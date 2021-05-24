@@ -66,9 +66,31 @@ nav ul li a{
   font-size: 36px;
 }
 
+.profile h2{
+  text-align: center;
+  margin: 40px 0;
+  font-size: 36px;
+  color: #111;
+  font-size: 36px;
+}
+
 .Us-Pw{
   margin-bottom: 12px;
   position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #8f2a2d;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .Us-Pw input{

@@ -12,6 +12,7 @@ body{
 }
 
 nav{
+    position: absolute;
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -44,4 +45,63 @@ nav ul li a{
     font-size: 18px;
     padding: 20px 14px;
     text-decoration: none;
+}
+
+.Contact_space{
+    position: relative;
+    top: 100px;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px 40px;
+    border: 5px solid rgba(100, 6, 6, 0.8);
+}
+
+.Contact_space h1{
+  text-align: center;
+  margin: 15px 0;
+  font-size: 36px;
+  color: #111;
+}
+
+.Contact_space h2{
+    text-align: right;
+    margin: 40px 0;
+    font-size: 36px;
+    color: #111;
+}
+
+@media only screen and (max-width: 720px){
+    nav p{
+        display: none;  
+    }
+
+    nav ul{
+        float:left;
+        margin:  0 15px;
+    }
+
+    nav ul li a{
+        display: block;
+        font-family: arial;
+        color: #222;
+        font-size: 18px;
+        padding: 20px 10px;
+        text-decoration: none;
+    }
+    .Contact_space h1{
+        text-align: center;
+        margin: 13px 0;
+        font-size: 30px;
+        color: #111;
+        padding: 10px 8px;
+      }
+    .Contact_space h2{
+        text-align: right;
+        margin: 10px 0;
+        font-size: 17px;
+        color: #111;
+    }
 }
