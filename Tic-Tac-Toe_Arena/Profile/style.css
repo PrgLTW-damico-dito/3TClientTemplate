@@ -9,9 +9,10 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-}
+  }
 
 nav{
+    position: absolute;
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -45,3 +46,85 @@ nav ul li a{
     padding: 20px 14px;
     text-decoration: none;
 }
+
+.profile{
+  position: relative;
+  top: 100px;
+  align-items: center;
+  width: calc(100% - 20px);
+  max-width: 500px;
+  height: 600px;
+  background-color: #fff;
+  padding: 50px 40px;
+}
+
+.profile h1{
+  text-align: center;
+  margin: 40px 0;
+  font-size: 36px;
+  color: #111;
+  font-size: 36px;
+}
+
+.Us-Pw{
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.Us-Pw input{
+  width: 420px;
+  height: 70px;
+  border: none;
+  background-color: #ededed;
+  border-radius: 4px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 60px 0 10px;
+}
+
+.placeholder{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  line-height: 52px; 
+  top: 0;
+  left: 20px;
+  color: #9d9d9d;
+  user-select: none;
+  pointer-events: none;
+}
+
+.textb input:focus ~ .placeholder,
+.textb input:valid ~ .placeholder{
+  left: 10px;
+  top: -16px;
+}
+
+.Picture{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.Picture img{
+    position: relative;
+    width: 100px;
+}
+
+.btn{
+    width: 60px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #8f2a2d;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  
+  .btn:hover{
+    opacity: .85;
+  }
