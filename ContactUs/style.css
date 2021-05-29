@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(TicTacToe.gif)no-repeat center;
+    background-color: rgb(37, 35, 35);
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+
+nav p{
+    font-family: arial;
+    color: #bc252a;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 1px 40px 0px 25px;
+
+}
+
+nav ul{
+    float:left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    font-family: arial;
+    color: #222;
+    font-size: 18px;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+.Andrea_Space{
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 600px;
+    padding: 50px 40px;
+}
+
+.Martina_Space{
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 600px;
+    padding: 50px 40px;
+}
+
+#Andrea_Profile{
+    position: absolute;
+    top: 175px;
+    left: 130px;
+    width: 200px;
+}
+
+#Martina_Profile{
+    position: absolute;
+    top: 175px;
+    right: 130px;
+    width: 200px;
+}
+
+.Andrea_Space h1{   
+  position: absolute;
+  top: 400px;
+  left: 130px;
+  text-align: left;
+  margin: 15px 0;
+  font-size: 36px;
+  color: #fff;
+}
+
+.Martina_Space h1{
+    position: absolute;
+    top: 400px;
+    right: 130px;
+    text-align: left;
+    margin: 15px 0;
+    font-size: 36px;
+    color: #fff;
+}
+
+.Andrea_Space h2{
+    position: absolute;
+    top: 440px;
+    left: 75px;
+    text-align: left;
+    margin: 40px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Martina_Space h2{
+    position: absolute;
+    top: 440px;
+    right: 75px;
+    text-align: right;
+    margin: 40px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background: url(TicTacToe.gif)no-repeat center;
+        background-color: rgb(37, 35, 35);
+        background-size: 600px;
+        background-position: 80px 10px;
+        max-height: 100px;
+        justify-content: center;
+    }
+
+    .Andrea_Space{
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+        padding: 50px 40px;
+    }
+    
+    .Martina_Space{
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+        padding: 50px 40px;
+    }
+    
+    #Andrea_Profile{
+        position: absolute;
+        top: 620px;
+        left: 70px;
+        width: 150px;
+    }
+    
+    #Martina_Profile{
+        position: absolute;
+        top: 620px;
+        right: 70px;
+        width: 150px;
+    }
+    
+    .Andrea_Space h1{   
+      position: absolute;
+      top: 780px;
+      left: 47px;
+      text-align: left;
+      margin: 15px 0;
+      font-size: 36px;
+      color: #fff;
+    }
+    
+    .Martina_Space h1{
+        position: absolute;
+        top: 780px;
+        right: 47px;
+        text-align: left;
+        margin: 15px 0;
+        font-size: 36px;
+        color: #fff;
+    }
+    
+    .Andrea_Space h2{
+        position: absolute;
+        top: 810px;
+        left: 42px;
+        text-align: left;
+        margin: 40px 0;
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    .Martina_Space h2{
+        position: absolute;
+        top: 810px;
+        right: 42px;
+        text-align: right;
+        margin: 40px 0;
+        font-size: 15px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    body{
+        background: url(TicTacToe.gif)no-repeat center;
+        background-color: rgb(37, 35, 35);
+        background-size: 300px;
+        background-position: 60px 70px;
+        max-height: 100px;
+        justify-content: center;
+    }
+
+    nav p{
+        display: none;
+    }
+    .Andrea_Space{
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        padding: 50px 40px;
+    }
+    
+    .Martina_Space{
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        padding: 50px 40px;
+    }
+    
+    #Andrea_Profile{
+        position: relative;
+        top: 305px;
+        left: 100px;
+        width: 100px;
+    }
+    
+    #Martina_Profile{
+        position: relative;
+        top: 515px;
+        right: 98px;
+        width: 100px;
+    }
+    
+    .Andrea_Space h1{   
+      position: relative;
+      top: 305px;
+      left: 93px;
+      text-align: center;
+      margin: 15px 0;
+      font-size: 24px;
+      color: #fff;
+    }
+    
+    .Martina_Space h1{
+        position: relative;
+        top: 520px;
+        right: 108px;
+        text-align: center;
+        margin: 15px 0;
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    .Andrea_Space h2{
+        position: relative;
+        top: 275px;
+        left: 32px;
+        text-align: center;
+        margin: 40px 0;
+        font-size: 16px;
+        color: #fff;
+    }
+    
+    .Martina_Space h2{
+        position: relative;
+        top: 495px;
+        right: 175px;
+        text-align: right;
+        margin: 40px 0;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        background: url(TicTacToe.gif)no-repeat center;
+        background-color: rgb(37, 35, 35);
+        background-size: 300px;
+        background-position: 38px 70px;
+        max-height: 200px;
+        justify-content: center;
+    }
+
+    nav p{
+        display: none;
+    }
+
+    .Andrea_Space{
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        padding: 50px 40px;
+    }
+    
+    .Martina_Space{
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        padding: 50px 40px;
+    }
+    
+    #Andrea_Profile{
+        position: relative;
+        top: 305px;
+        left: 100px;
+        width: 100px;
+    }
+    
+    #Martina_Profile{
+        position: relative;
+        top: 515px;
+        right: 98px;
+        width: 100px;
+    }
+    
+    .Andrea_Space h1{   
+      position: relative;
+      top: 305px;
+      left: 93px;
+      text-align: center;
+      margin: 15px 0;
+      font-size: 24px;
+      color: #fff;
+    }
+    
+    .Martina_Space h1{
+        position: relative;
+        top: 520px;
+        right: 108px;
+        text-align: center;
+        margin: 15px 0;
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    .Andrea_Space h2{
+        position: relative;
+        top: 275px;
+        left: 32px;
+        text-align: center;
+        margin: 40px 0;
+        font-size: 16px;
+        color: #fff;
+    }
+    
+    .Martina_Space h2{
+        position: relative;
+        top: 495px;
+        right: 175px;
+        text-align: right;
+        margin: 40px 0;
+        font-size: 16px;
+        color: #fff;
+    }
+}
